@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="css/styles.css">
 <script>
     
-var ref=document.referrer;
-if (ref.indexOf('https://imgarnier.com/')>0){
-  ref=ref.replace('https://imgarnier.com/');
-  window.location.href='https://imgarnier-secret1.netlify.app'+ref;
-} 
+    var oldURL = document.referrer;
+if(oldURL!="https://imgarnier.com/"){
+    window.location.href='https://imgarnier-secret1.netlify.app';
+}
+
+else {
+   location.replace("https://imgarnier.com/")
+}
+
+    
 </script>
 
     
